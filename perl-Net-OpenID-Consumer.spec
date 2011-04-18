@@ -19,6 +19,7 @@ BuildRequires: perl(MIME::Base64)
 BuildRequires: perl(Time::Local)
 BuildRequires: perl(URI)
 BuildRequires: perl(XML::Simple)
+BuildRequires: perl(CGI)
 BuildArch: noarch
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}
 
