@@ -1,19 +1,20 @@
 %define upstream_name    Net-OpenID-Consumer
-%define upstream_version 1.03
+%define upstream_version 1.14
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
-Release:	3
+Release:	1
 
 Summary:	Object representing a verified OpenID identity
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/Net/%{upstream_name}-%{upstream_version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/Net/Net-OpenID-Consumer-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel
 BuildRequires:	perl(Crypt::DH)
 BuildRequires:	perl(Digest::SHA1)
+BuildRequires:	perl(Digest::SHA)
 BuildRequires:	perl(HTTP::Request)
 BuildRequires:	perl(LWP::UserAgent)
 BuildRequires:	perl(MIME::Base64)
@@ -66,3 +67,4 @@ perl Makefile.PL INSTALLDIRS=vendor
 
 * Mon Apr 26 2010 cpan2dist 1.03-1mdv
 - initial mdv release, generated with cpan2dist
+

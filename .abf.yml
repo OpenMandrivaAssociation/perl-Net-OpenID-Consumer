@@ -1,2 +1,4 @@
+removed_sources:
+  Net-OpenID-Consumer-1.03.tar.gz: 267e74afdb5a136ee2cba6f11f61b5a3cb626fdf
 sources:
-  "Net-OpenID-Consumer-1.03.tar.gz": 267e74afdb5a136ee2cba6f11f61b5a3cb626fdf
+  Net-OpenID-Consumer-1.14.tar.gz: 5fdb84ff94788e518497860751506258541494b7
