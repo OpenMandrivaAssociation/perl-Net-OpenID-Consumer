@@ -1,15 +1,16 @@
 %define upstream_name    Net-OpenID-Consumer
-%define upstream_version 1.14
+%define upstream_version 1.15
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
 Release:	1
 
 Summary:	Object representing a verified OpenID identity
+
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/Net/Net-OpenID-Consumer-%{upstream_version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/Net/%{upstream_name}-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel
 BuildRequires:	perl(Crypt::DH)
@@ -54,17 +55,4 @@ perl Makefile.PL INSTALLDIRS=vendor
 %{_mandir}/man3/*
 %{perl_vendorlib}/*
 
-%changelog
-* Mon Apr 18 2011 Funda Wang <fwang@mandriva.org> 1.30.0-2mdv2011.0
-+ Revision: 655425
-- add br
-- rebuild for updated spec-helper
-
-* Mon Apr 26 2010 Nicolas Vigier <nvigier@mandriva.com> 1.30.0-1mdv2011.0
-+ Revision: 539225
-- import perl-Net-OpenID-Consumer
-
-
-* Mon Apr 26 2010 cpan2dist 1.03-1mdv
-- initial mdv release, generated with cpan2dist
 
