@@ -1,15 +1,13 @@
 %define upstream_name    Net-OpenID-Consumer
-%define upstream_version 1.18
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	1
+Version:	1.18
+Release:	2
 
 Summary:	Object representing a verified OpenID identity
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		https://github.com/wrog/Net-OpenID-Consumer
-Source0:	https://cpan.metacpan.org/authors/id/W/WR/WROG/Net-OpenID-Consumer-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/W/WR/WROG/Net-OpenID-Consumer-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -38,7 +36,7 @@ for other uses, the Net::Yadis::Discovery manpage is probably a better
 choice.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
